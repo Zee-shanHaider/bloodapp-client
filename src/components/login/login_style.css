@@ -1,0 +1,61 @@
+.loginForm {
+    margin: 50px 20px;
+}
+
+.login-input {
+    padding: 4px 10px;
+    margin: 5px 0px;
+    border: none;
+    border-bottom: 1px solid silver;
+    border-radius: 0;
+    width: 70%;
+    /* outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none; */
+
+}
+
+.auth-btn {
+    margin-top: 5px;
+    text-align: center; 
+    width: 13%;
+    margin: 5px auto;
+}
+
+.btnSign {
+    text-decoration: none;
+    color: black;
+    margin-top: 5px;
+}
+
+.btnSign:hover{
+    color: red;
+}
+
+input:focus ~ .floating-label,
+input:not(:focus):valid ~ .floating-label{
+  top: 8px;
+  bottom: 10px;
+  left: 20px;
+  font-size: 11px;
+  opacity: 1;
+}
+
+.inputText {
+  font-size: 14px;
+  width: 200px;
+  height: 35px;
+}
+
+.floating-label {
+  position: absolute;
+  pointer-events: none;
+  left: 20px;
+  top: 18px;
+  transition: 0.2s ease all;
+}
+
+.login-form {
+  width: 45%;
+}
