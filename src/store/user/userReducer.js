@@ -1,5 +1,5 @@
 import userTypes from "./userTypes";
-const {User_Signup_Success, User_Signup_Failed, User_Login_Success, User_Login_Failed, User_LoggedIn} = userTypes;
+const {User_Signup_Success, User_Signup_Failed, User_Login_Success, User_Login_Failed, User_LoggedIn, User_Logout} = userTypes;
 
 const Initital_State = {
     user: null,
@@ -41,6 +41,13 @@ export const userReducer = (state=Initital_State, action)=>{
                                 ...state,
                                 isLoggedIn: payload
                             }
+                            case User_Logout:
+                                return{
+                                    ...state,
+                                    isLoggedIn: false,
+                                    token: null,
+                                    user: null
+                                }
             default:
                 return state
     }

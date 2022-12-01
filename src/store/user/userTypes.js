@@ -3,6 +3,7 @@ export default  {
     User_Signup_Failed: 'User_Signup_Failed',
     User_Login_Success: 'User_Login_Success',
     User_Login_Failed: 'User_Login_Failed',
-    User_LoggedIn: 'User_LoggedIn'
+    User_LoggedIn: 'User_LoggedIn',
+    User_Logout: 'User_Logout'
 
 } 

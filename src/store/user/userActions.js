@@ -1,7 +1,7 @@
 import userTypes from "./userTypes";
 import axios from 'axios'
 import {url} from '../../configUrl'
-const {User_Signup_Success, User_Signup_Failed, User_Login_Success, User_Login_Failed, User_LoggedIn} = userTypes;
+const {User_Signup_Success, User_Signup_Failed, User_Login_Success, User_Login_Failed, User_LoggedIn ,User_Logout} = userTypes;
 
 
 const userLogin = (response)=>{
@@ -29,6 +29,13 @@ const signupFailed = (err)=>{
   return{
     type: User_Signup_Failed,
     payload: err
+  }
+}
+
+export const UserLogout = ()=>{
+  return {
+    type: User_Logout,
+    payload:''
   }
 }
 
